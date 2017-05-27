@@ -13,6 +13,15 @@ export default Backbone.Model.extend({
     twitter: '',
     website: ''
   },
+
+  initialize() {
+    this.repositories = new Backbone.Collection()
+    this.on('change:repositories', this.repositoriesChanged, this)
+  },
+
+  repositoriesChanged() {
+    this.repositories.reset(this.get('repositories'))
+  },
   
   getGravatar() {
     let email = this.get('email')

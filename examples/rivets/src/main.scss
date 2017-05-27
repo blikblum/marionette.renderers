@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 400;
   background-color: #f3f3f3;
-  h1,h2,h3 {
+  h1,h2,h3,h4 {
     font-weight: 300;
     font-family: 'Open Sans', sans-serif !important;
     text-align: center;
@@ -100,6 +100,18 @@ body {
   }
   pre {
     background-color: #fff;
+  }
+}
+
+.repositories-view {
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    margin-right: 5px;
   }
 }
 
