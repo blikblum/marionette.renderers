@@ -1,0 +1,29 @@
+{
+  "name": "marionette.renderers",
+  "version": "0.1.0",
+  "description": "Custom renderers for MarionetteJS",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blikblum/marionette.renderers.git"
+  },
+  "keywords": [
+    "marionette",
+    "rivets",
+    "superviews",
+    "snabbdom",
+    "virtual-dom"
+  ],
+  "author": "Luiz Américo Pereira Câmara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blikblum/marionette.renderers/issues"
+  },
+  "homepage": "https://github.com/blikblum/marionette.renderers#readme"
+}

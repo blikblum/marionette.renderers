@@ -1,0 +1,23 @@
+<h3>Contact View</h3>
+<div >
+  <div class="info">
+    <!-- Rivets note: computed property (triggered by email change) -->
+    <img rv-src="model.getGravatar < :email" rv-show="model:email"></img>
+    <!-- Rivets note: computed property (triggered by :first_name :last_name change) -->
+    <h1>{ model.getFullName < :first_name :last_name }</h1>
+    <p rv-html="model:short_bio | linebreaksbr"></p>
+  </div>
+  <ul class="links">
+    <li rv-show="model:github">
+      <a rv-href="model:github">
+        <i class="fa fa-github"></i>
+      </a>
+    </li>
+    <li rv-show="model:twitter">
+      <a rv-href="model:twitter"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li rv-show="model:website">
+      <a rv-href="model:website"><i class="fa fa-link"></i></a>
+    </li>
+  <ul>
+</div>
