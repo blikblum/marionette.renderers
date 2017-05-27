@@ -1,9 +1,9 @@
 import './setup'
 import Marionette from 'backbone.marionette'
 import ContactModel from './contact/model'
-import ContactView from './contact/contactview'
-import ContactFormView from './contact/contactformview'
-import ModelJSONView from './contact/modeljsonview'
+import ContactView from './contact/contact-view'
+import ContactFormView from './contact/contactform-view'
+import ModelJSONView from './contact/modeljson-view'
 import sampleData from './contact/sampledata'
 
 let MainView = Marionette.View.extend({
