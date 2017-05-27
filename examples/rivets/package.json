@@ -5,7 +5,8 @@
   "main": "main.js",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack"
+    "dev": "webpack -w",
+    "build": "webpack -p"
   },
   "dependencies": {
     "backbone": "^1.3.3",
@@ -13,8 +14,9 @@
     "backbone.radio": "^2.0.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
-    "rivets": "^0.9.6",
-    "rivets-backbone-adapter": "^2.2.0",
+    "marionette.renderers": "^0.1.0",
+    "rivets": "blikblum/rivets#svelte",
+    "rivets-backbone-adapter": "blikblum/rivets-backbone-adapter#svelte",
     "underscore": "^1.8.3"
   },
   "devDependencies": {

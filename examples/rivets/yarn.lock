@@ -496,7 +496,7 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-preset-es2015@^6.24.1:
+babel-preset-es2015@^6.18.0, babel-preset-es2015@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-preset-es2015/-/babel-preset-es2015-6.24.1.tgz#d44050d6bc2c9feea702aaf38d727a0210538939"
   dependencies:
@@ -2039,6 +2039,10 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
+marionette.renderers@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/marionette.renderers/-/marionette.renderers-0.1.0.tgz#79aab816331535dcd1a7acf8f8c95164c832c7aa"
+
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
@@ -2999,11 +3003,21 @@ rivets-backbone-adapter@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/rivets-backbone-adapter/-/rivets-backbone-adapter-2.2.0.tgz#edb0ed083573dcf037ead457486337fe9e734ef8"
 
+rivets-backbone-adapter@blikblum/rivets-backbone-adapter#svelte:
+  version "2.2.0"
+  resolved "https://codeload.github.com/blikblum/rivets-backbone-adapter/tar.gz/64d8e7ac91a90f459b63e8fd5b2d4b82b5cbf975"
+
 rivets@^0.9.6:
   version "0.9.6"
   resolved "https://registry.yarnpkg.com/rivets/-/rivets-0.9.6.tgz#5081e5ed3944def7f6fcd3a326ee42168799fd33"
   dependencies:
     sightglass "~0.2.4"
+
+rivets@blikblum/rivets#svelte:
+  version "0.8.1"
+  resolved "https://codeload.github.com/blikblum/rivets/tar.gz/7c66f3b7b9f0b844c7daeba16824eff6467160b9"
+  dependencies:
+    babel-preset-es2015 "^6.18.0"
 
 safe-buffer@^5.0.1:
   version "5.0.1"
