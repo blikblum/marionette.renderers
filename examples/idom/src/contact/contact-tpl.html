@@ -1,0 +1,29 @@
+<template args="data">
+  <h3>Contact View</h3>
+  <div class="contact-view">
+    <div class="info">
+      <!-- Rivets note: computed property (triggered by email change) -->
+      <img src="{data.gravatar}" if="data.email"></img>
+      <!-- Rivets note: computed property (triggered by :first_name :last_name change) -->
+      <h1>{ data.fullName }</h1>
+      <p>{data.short_bio}</p>
+    </div>
+    <ul class="links">
+      <li if="data.github">
+        <a href="{data.github}">
+          <i class="fa fa-github"></i>
+        </a>
+      </li>
+      <li if="data.twitter">
+        <a href="{data.twitter}"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li if="data.website">
+        <a href="{data.website}"><i class="fa fa-link"></i></a>
+      </li>
+    </ul>
+  </div>
+  <h4>Repositories</h4>
+  <div class="repositories-view">
+
+  </div>
+</template>
