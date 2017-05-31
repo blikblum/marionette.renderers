@@ -1852,6 +1852,10 @@ js-base64@^2.1.8, js-base64@^2.1.9:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
 
+js-md5@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/js-md5/-/js-md5-0.4.2.tgz#8a1231e60ab392a6d3a75db6d532ec0c59667bc3"
+
 js-tokens@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
@@ -2999,19 +3003,9 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^2.0.0"
     inherits "^2.0.1"
 
-rivets-backbone-adapter@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/rivets-backbone-adapter/-/rivets-backbone-adapter-2.2.0.tgz#edb0ed083573dcf037ead457486337fe9e734ef8"
-
 rivets-backbone-adapter@blikblum/rivets-backbone-adapter#svelte:
   version "2.2.0"
   resolved "https://codeload.github.com/blikblum/rivets-backbone-adapter/tar.gz/64d8e7ac91a90f459b63e8fd5b2d4b82b5cbf975"
-
-rivets@^0.9.6:
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/rivets/-/rivets-0.9.6.tgz#5081e5ed3944def7f6fcd3a326ee42168799fd33"
-  dependencies:
-    sightglass "~0.2.4"
 
 rivets@blikblum/rivets#svelte:
   version "0.8.1"
@@ -3089,10 +3083,6 @@ shallow-clone@^0.1.2:
     kind-of "^2.0.1"
     lazy-cache "^0.2.3"
     mixin-object "^2.0.1"
-
-sightglass@~0.2.4:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/sightglass/-/sightglass-0.2.6.tgz#9120bb852d259cf821274856375bbdf900983841"
 
 signal-exit@^3.0.0:
   version "3.0.2"

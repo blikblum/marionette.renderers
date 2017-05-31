@@ -1,8 +1,5 @@
-// The Backbone Model and Views for our example.
-// Normally these would be split into their own files but
-// for examples sake we're combinding everything here.
-
 import Backbone from 'backbone'
+import md5 from 'js-md5'
 
 export default Backbone.Model.extend({
   defaults: {
@@ -26,7 +23,7 @@ export default Backbone.Model.extend({
   getGravatar() {
     let email = this.get('email')
     if (!email) return ''
-    return `http://www.gravatar.com/avatar/#${email}`
+    return `http://www.gravatar.com/avatar/${md5(email)}`
   },
 
   getFullName() {
