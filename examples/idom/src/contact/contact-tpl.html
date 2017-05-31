@@ -6,7 +6,13 @@
       <img src="{data.gravatar}" if="data.email"></img>
       <!-- Rivets note: computed property (triggered by :first_name :last_name change) -->
       <h1>{ data.fullName }</h1>
-      <p>{data.short_bio}</p>
+      <p>
+        <script>
+          var el = currentElement()
+          el.innerHTML = data.short_bio
+          skip()
+        </script>
+      </p>
     </div>
     <ul class="links">
       <li if="data.github">

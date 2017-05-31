@@ -2,7 +2,7 @@ export default {
   michael: {
     first_name: "Michael",
     last_name: "Richards",
-    short_bio: "Ruby/JavaScript developer. Author of Rivets.js.",
+    short_bio: "Ruby/JavaScript developer. Author of <b>Rivets.js</b>.",
     email: "mike22e@gmail.com",
     twitter: "https://twitter.com/mikeric",
     github: "http://github.com/mikeric",
@@ -12,7 +12,7 @@ export default {
   mark: {
     first_name: "Mark",
     last_name: "Johnson",
-    short_bio: "Web designer, developer and teacher. Co-founder of Pathwright",
+    short_bio: "Web designer, developer and teacher. Co-founder of <b>Pathwright</b>",
     email: "wmdmark@gmail.com",
     twitter: "http://twitter.com/wmdmark",
     github: "http://github.com/wmdmark",
@@ -22,7 +22,7 @@ export default {
   mason: {
     first_name: "Mason",
     last_name: "Stewart",
-    short_bio: "Frontender, JavaScripter, & Lisper",
+    short_bio: "Frontender, JavaScripter, & <i>Lisper</i>",
     email: "mason@theironyard.com",
     twitter: "http://twitter.com/masondesu",
     github: "https://github.com/masondesu",
