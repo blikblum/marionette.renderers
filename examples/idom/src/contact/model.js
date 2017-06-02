@@ -12,6 +12,7 @@ export default Backbone.Model.extend({
   },
 
   initialize() {
+    this.computedFields = new Backbone.ComputedFields(this)
     this.repositories = new Backbone.Collection()
     this.on('change:repositories', this.repositoriesChanged, this)
   },
@@ -19,14 +20,20 @@ export default Backbone.Model.extend({
   repositoriesChanged() {
     this.repositories.reset(this.get('repositories'))
   },
-  
-  getGravatar() {
-    let email = this.get('email')
-    if (!email) return ''
-    return `http://www.gravatar.com/avatar/${md5(email)}`
-  },
 
-  getFullName() {
-   return `${this.get('first_name')} ${this.get('last_name')}`   
+  computed: {
+    gravatar: {
+      depends: ['email'],
+      get: function(fields) {
+        if (!fields.email) return ''
+        return `http://www.gravatar.com/avatar/${md5(fields.email)}`
+      }
+    },
+    fullName: {
+      depends: ['first_name', 'last_name'],
+      get: function(fields) {
+        return `${fields.first_name} ${fields.last_name}`
+      }
+    }
   }
 })

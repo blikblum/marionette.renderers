@@ -1,10 +1,8 @@
 <h3>Contact View</h3>
 <div class="contact-view">
   <div class="info">
-    <!-- Rivets note: computed property (triggered by email change) -->
-    <img rv-src="model.getGravatar < :email" rv-show="model:email"></img>
-    <!-- Rivets note: computed property (triggered by :first_name :last_name change) -->
-    <h1>{ model.getFullName < :first_name :last_name }</h1>
+    <img rv-src="model:gravatar" rv-show="model:email"></img>
+    <h1>{ model:fullName }</h1>
     <p rv-html="model:short_bio | linebreaksbr"></p>
   </div>
   <ul class="links">
