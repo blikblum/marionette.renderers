@@ -11,13 +11,6 @@ export default Marionette.View.extend({
 
   template: template,
 
-  templateContext() {
-    return {
-      gravatar: this.model.getGravatar(),
-      fullName: this.model.getFullName()
-    }
-  },
-
   modelEvents: {
     change: 'render'
   },
@@ -27,6 +20,9 @@ export default Marionette.View.extend({
   },
 
   onRender() {
-    this.showChildView('repositories', new RepositoriesView({model: this.model}))
+    // do not rerender repositories view
+    if (!this.getRegion('repositories').hasView()) {
+       this.showChildView('repositories', new RepositoriesView({model: this.model}))
+    }
   }
 })
