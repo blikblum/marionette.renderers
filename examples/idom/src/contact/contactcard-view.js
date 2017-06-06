@@ -1,5 +1,5 @@
 import Marionette from 'backbone.marionette'
-import template from './contact-tpl.html'
+import template from './contactcard-tpl.html'
 import RepositoriesView from './repositories-view'
 
 export default Marionette.View.extend({
