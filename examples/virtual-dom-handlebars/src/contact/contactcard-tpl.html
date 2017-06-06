@@ -1,0 +1,33 @@
+<h3>Contact View</h3>
+<div class="contact-view">
+  <div class="info">
+    {{#if email}}
+    <img src="{{gravatar}}"></img>
+    {{/if}}
+    <h1>{{fullName}}</h1>
+    <p>{{short_bio}}</p>
+  </div>
+  <ul class="links">
+    {{#if github}}
+    <li>
+      <a href="{{github}}">
+        <i class="fa fa-github"></i>
+      </a>
+    </li>
+    {{/if}}
+    {{#if twitter}}
+    <li>
+      <a href="{{twitter}}"><i class="fa fa-twitter"></i></a>
+    </li>
+    {{/if}}
+    {{#if website}}
+    <li>
+      <a href="{{website}}"><i class="fa fa-link"></i></a>
+    </li>
+    {{/if}}
+  </ul>
+</div>
+<h4>Repositories</h4>
+<div class="repositories-view">
+
+</div>
