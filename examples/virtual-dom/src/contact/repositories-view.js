@@ -4,8 +4,8 @@ import hh from 'hyperscript-helpers'
 
 let {a} = hh(h)
 
-function repositoryItem(data) {
-  return [a({href: data.github + '/' + data.name}, data.name)]
+function repositoryItem(state) {
+  return a({href: state.github + '/' + state.name}, state.name)
 }
 
 const ItemView = Marionette.View.extend({

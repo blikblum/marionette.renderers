@@ -4,7 +4,7 @@ import hh from 'hyperscript-helpers'
 let {a, code, h3, header, pre} = hh(h);
 
 
-export default function(data){
+export default function(state){
  return [
    header([
      h3([`Contact Model JSON View`]),
@@ -16,16 +16,12 @@ export default function(data){
          "data-sample": "michael"
        }
      }, [`Michael,`]),
-     `
-    `,
      a({
        "attributes": {
          "href": "javascript:void(0);",
          "data-sample": "mark"
        }
      }, [`Mark,`]),
-     `
-    `,
      a({
        "attributes": {
          "href": "javascript:void(0);",
@@ -34,7 +30,7 @@ export default function(data){
      }, [`Mason`])
    ]),
    pre([
-     code([data.modelJSON])
+     code([state.modelJSON])
    ])
  ]
 

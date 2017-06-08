@@ -4,7 +4,7 @@ import hh from 'hyperscript-helpers'
 let {div, h3, h5, input, textarea} = hh(h);
 
 
-export default function(data){
+export default function(state){
   return [
     h3([`Contact Form View`]),
     h5([`(These fields update the model on key up)`]),
@@ -15,7 +15,7 @@ export default function(data){
             "type": "text",
             "name": "first_name",
             "placeholder": "First name",
-            "value": data.first_name
+            "value": state.first_name
           }
         })
       ]),
@@ -25,7 +25,7 @@ export default function(data){
             "type": "text",
             "name": "last_name",
             "placeholder": "Last name",
-            "value": data.last_name
+            "value": state.last_name
           }
         })
       ])
@@ -37,7 +37,7 @@ export default function(data){
           "placeholder": "Short bio",
           "name": "short_bio"
         }
-      }, [data.short_bio])
+      }, [state.short_bio])
     ]),
     h5([`(These fields update the model on change)`]),
     div(".form-group", [
@@ -46,7 +46,7 @@ export default function(data){
           "type": "email",
           "placeholder": "Email address",
           "name": "email",
-          "value": data.email
+          "value": state.email
         }
       })
     ]),
@@ -56,7 +56,7 @@ export default function(data){
           "type": "text",
           "name": "twitter",
           "placeholder": "Twitter",
-          "value": data.twitter
+          "value": state.twitter
         }
       })
     ]),
@@ -66,7 +66,7 @@ export default function(data){
           "type": "text",
           "placeholder": "Github",
           "name": "github",
-          "value": data.github
+          "value": state.github
         }
       })
     ]),
@@ -76,7 +76,7 @@ export default function(data){
           "type": "text",
           "name": "website",
           "placeholder": "Website",
-          "value": data.website
+          "value": state.website
         }
       })
     ])
