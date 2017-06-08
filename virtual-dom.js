@@ -19,11 +19,15 @@ module.exports = function (template, data) {
     //virtual-dom does not provide an api to render the children of an element
     //applying patch in first render works but is not optimal
     var node = this.el
-    for (var i = 0; i < children.length; i++) {
-      var childNode = createElement(children[i])
-      if (childNode) {
-        node.appendChild(childNode)
+    if (Array.isArray(children)) {
+      for (var i = 0; i < children.length; i++) {
+        var childNode = createElement(children[i])
+        if (childNode) {
+          node.appendChild(childNode)
+        }
       }
+    } else {
+      node.appendChild(createElement(children))
     }
   } else {
     var treeDiff = diff(this.elVirtualTree, newVirtualTree)
