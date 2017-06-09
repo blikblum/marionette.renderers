@@ -46,9 +46,8 @@ module.exports = {
       test: /\.svg$/,
       use: "url-loader?limit=10000&mimetype=image/svg+xml"
     },{
-      exclude: [/node_modules/],
       test: /-tpl\.html$/,
-      use: ['babel-loader', './incremental-bars-loader']
+      use: ['babel-loader', 'incremental-bars-loader']
     }]
   },
   plugins: [

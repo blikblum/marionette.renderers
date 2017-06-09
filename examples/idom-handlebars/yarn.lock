@@ -1227,16 +1227,9 @@ domutils@1.1:
   dependencies:
     domelementtype "1"
 
-domutils@1.5.1:
+domutils@1.5.1, domutils@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
-  dependencies:
-    dom-serializer "0"
-    domelementtype "1"
-
-domutils@^1.5.1:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.6.2.tgz#1958cc0b4c9426e9ed367fb1c8e854891b0fa3ff"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -1694,7 +1687,14 @@ in-publish@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/in-publish/-/in-publish-2.0.0.tgz#e20ff5e3a2afc2690320b6dc552682a9c7fadf51"
 
-incremental-bars@*:
+incremental-bars-loader@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/incremental-bars-loader/-/incremental-bars-loader-0.1.0.tgz#d26fee1c39cec317c519f94ea75ddc30d0870a5b"
+  dependencies:
+    incremental-bars "^1.0.4"
+    loader-utils "^1.1.0"
+
+incremental-bars@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/incremental-bars/-/incremental-bars-1.0.4.tgz#ab209f5b2e8d43853c0b16340b647279e3cc7eb7"
   dependencies:
@@ -1997,7 +1997,7 @@ loader-utils@^0.2.16:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-loader-utils@^1.0.1, loader-utils@^1.0.2:
+loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.1.0.tgz#c98aef488bcceda2ffb5e2de646d6a754429f5cd"
   dependencies:
