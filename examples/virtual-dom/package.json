@@ -12,10 +12,10 @@
     "backbone.marionette": "^3.3.1",
     "backbone.radio": "^2.0.0",
     "backbone.syphon": "^0.7.0",
+    "blueimp-md5": "^2.7.0",
     "bootstrap": "^3.3.7",
     "hyperscript-helpers": "^3.0.3",
     "jquery": "^3.2.1",
-    "js-md5": "^0.4.2",
     "marionette.renderers": "^2.2.0",
     "underscore": "^1.8.3",
     "virtual-dom": "^2.1.1"
