@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marionette snabbdom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Marionette With snabbdom</h1>
+    <p>
+      This example demonstrates binding three <a href="https://marionettejs.com">Marionette.js</a> views to a single model and updated through <a href="http://www.rivetsjs.com/">Rivets.js</a> bindings.
+      Try modifying the values in the contact form below and watch the other view update live!
+    </p>
+  </div>
+</header>
+
+<div id="main-view" class="container">
+  <div class="row">
+    <!-- ContactFormView -->
+    <form id="contact-form-view">
+    </form>
+
+    <!-- ContactView -->
+    <div id="contact-view">
+    </div>
+  </div>
+
+  <!-- ModelJSONView -->
+  <div id="model-json-view">
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    Written by <a href="http://twitter.com/wmdmark">@wmdmark</a> for a <a href="http://twitter.com/greenvillejs">@GreenvilleJS</a> demo.
+    Adapted to Marionette by blikblum
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "generator-mn": {
+    "defaultRenderer": "snabbdom"
+  }
+}
