@@ -17,8 +17,8 @@ module.exports = function (template, data) {
     // this ensure the view element will be properly patched
     var emptyTree = vnode(newTree.sel, {}, [], undefined, this.el)
     patch(emptyTree, newTree)
-    this.elTree = newTree
   } else {
     patch(this.elTree, newTree)
   }
+  this.elTree = newTree
 }
