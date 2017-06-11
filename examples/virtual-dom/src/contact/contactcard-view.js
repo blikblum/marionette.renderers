@@ -19,6 +19,8 @@ export default Marionette.View.extend({
     repositories: '.repositories-view'
   },
 
+  _reInitRegions() {},
+
   ensureChildView(regionName, ViewClass, options) {
     if (!this.getRegion(regionName).hasView()) {
       this.showChildView(regionName, new ViewClass(options))

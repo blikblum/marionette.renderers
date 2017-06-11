@@ -25,6 +25,8 @@ export default Marionette.View.extend({
     }
   },
 
+  _reInitRegions() {},
+
   onRender() {
     // do not rerender repositories view
     this.ensureChildView('repositories', RepositoriesView, {model: this.model})
