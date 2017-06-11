@@ -2064,9 +2064,9 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
-marionette.renderers@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/marionette.renderers/-/marionette.renderers-0.3.0.tgz#45eecb8853d1deaeb5af262dbc7e50e0aff5c25f"
+marionette.renderers@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/marionette.renderers/-/marionette.renderers-0.3.1.tgz#22e36376af528339477e8acdf4fed39102207907"
 
 math-expression-evaluator@^1.2.14:
   version "1.2.17"
