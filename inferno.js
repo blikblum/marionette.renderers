@@ -1,5 +1,6 @@
 var inferno = require('inferno')
 
 module.exports = function (template, data) {
-  inferno.render(template(data), this.el)
+  let state = this.thisAsState ? this : data
+  inferno.render(template(state), this.el)
 }
