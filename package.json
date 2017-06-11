@@ -1,6 +1,6 @@
 {
   "name": "marionette.renderers",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Custom renderers for MarionetteJS",
   "main": "index.js",
   "directories": {
