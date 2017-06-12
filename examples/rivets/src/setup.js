@@ -14,7 +14,11 @@ Marionette.View.setRenderer(renderer)
 
 rivets.formatters.linebreaksbr = function(value){
   return value.replace(/\n/g, '<br>')
-};
+}
+
+rivets.formatters.stringify = function(value){
+  return JSON.stringify(value, null, '  ')
+}
 
 rivets.formatters.prefix = function (value) {
   if (value != null) {
@@ -23,4 +27,4 @@ rivets.formatters.prefix = function (value) {
     }, '')
     return prefix + value
   }
-};
+}

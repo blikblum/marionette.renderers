@@ -7,7 +7,6 @@ export default function(state) {
       <a href="javascript:void(0);" data-sample="mark">Mark, </a>
       <a href="javascript:void(0);" data-sample="mason">Mason</a>
     </header>
-    <pre><code>{state.modelJSON}</code></pre>
+    <pre><code>{JSON.stringify(state, null, '  ')}</code></pre>
   </div>
 }
-

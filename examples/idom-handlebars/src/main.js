@@ -18,7 +18,7 @@ let MainView = Marionette.View.extend({
   initialize() {
     this.showChildView('contactcard', new ContactCardView({model: this.model}))
     this.showChildView('contactform', new ContactFormView({model: this.model}))
-    this.showChildView('modeljson', new ModelJSONView({watch: this.model}))
+    this.showChildView('modeljson', new ModelJSONView({model: this.model}))
   }
 })
 

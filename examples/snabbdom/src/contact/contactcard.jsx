@@ -9,7 +9,7 @@ export default function(state){
         {state.email && <img src={state.gravatar}/>}
 
         <h1>{ state.fullName }</h1>
-        <p>{state.short_bio}</p>
+        <p innerHTML={state.short_bio}></p>
       </div>
       <ul className="links">
         {state.github && <li>

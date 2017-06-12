@@ -23,3 +23,7 @@ Handlebars.registerHelper('setInnerHTML', function (value) {
   el.innerHTML = value
   idom.skip()
 })
+
+Handlebars.registerHelper('stringify', function (value) {
+  return JSON.stringify(value, null, '  ')
+})

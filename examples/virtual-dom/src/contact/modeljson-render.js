@@ -30,7 +30,7 @@ export default function(state){
      }, [`Mason`])
    ]),
    pre([
-     code([state.modelJSON])
+     code([JSON.stringify(state, null, '  ')])
    ])
  ]
 

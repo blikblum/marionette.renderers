@@ -16,7 +16,7 @@
     "bootstrap": "^3.3.7",
     "hyperscript-helpers": "^3.0.3",
     "jquery": "^3.2.1",
-    "marionette.renderers": "^2.2.0",
+    "marionette.renderers": "^0.3.2",
     "underscore": "^1.8.3",
     "virtual-dom": "^2.1.1"
   },
