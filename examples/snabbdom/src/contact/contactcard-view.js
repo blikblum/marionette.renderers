@@ -33,6 +33,7 @@ export default Marionette.View.extend({
     this.ensureChildView('repositories', RepositoriesView, {model: this.model})
     if (!this.ratingInitialized) {
       this.$('#contact-rating').barrating({
+        initialRating: this.model.get('rating'),
         theme: 'fontawesome-stars',
         onSelect: (value) => {
           this.model.set('rating', +value)

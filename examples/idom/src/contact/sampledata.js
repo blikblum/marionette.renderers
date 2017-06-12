@@ -7,7 +7,8 @@ export default {
     twitter: "https://twitter.com/mikeric",
     github: "http://github.com/mikeric",
     website: "",
-    repositories: [{name: "rivets"}, {name: "sightglass"}, {name: "dotfiles"}]
+    repositories: [{name: "rivets"}, {name: "sightglass"}, {name: "dotfiles"}],
+    rating: 2
   },
   mark: {
     first_name: "Mark",
@@ -17,7 +18,8 @@ export default {
     twitter: "http://twitter.com/wmdmark",
     github: "http://github.com/wmdmark",
     website: "http://pathwright.com",
-    repositories: [{name: "goap-js"}, {name: "kaldi-hugo-cms-template"}]
+    repositories: [{name: "goap-js"}, {name: "kaldi-hugo-cms-template"}],
+    rating: 3
   },
   mason: {
     first_name: "Mason",
@@ -27,6 +29,7 @@ export default {
     twitter: "http://twitter.com/masondesu",
     github: "https://github.com/masondesu",
     website: "",
-    repositories: [{name: "gulp-directory-map"}, {name: "garbage-exercises"}, {name: "pizza-shop-turbo"}]
+    repositories: [{name: "gulp-directory-map"}, {name: "garbage-exercises"}, {name: "pizza-shop-turbo"}],
+    rating: 4
   }
 }
