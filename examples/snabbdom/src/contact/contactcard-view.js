@@ -12,7 +12,8 @@ export default Marionette.View.extend({
   template: template,
 
   modelEvents: {
-    change: 'render'
+    change: 'render',
+    'change:rating': 'updateRating'
   },
 
   regions: {
@@ -30,5 +31,22 @@ export default Marionette.View.extend({
   onRender() {
     // do not rerender repositories view
     this.ensureChildView('repositories', RepositoriesView, {model: this.model})
+    if (!this.ratingInitialized) {
+      this.$('#contact-rating').barrating({
+        theme: 'fontawesome-stars',
+        onSelect: (value) => {
+          this.model.set('rating', +value)
+        }
+      })
+      this.ratingInitialized = true
+    }
+  },
+
+  updateRating() {
+    this.$('#contact-rating').barrating('set', this.model.get('rating'))
+  },
+
+  onDestroy() {
+    this.$('#contact-rating').barrating('destroy')
   }
 })

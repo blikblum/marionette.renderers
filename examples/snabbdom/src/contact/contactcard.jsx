@@ -10,6 +10,16 @@ export default function(state){
 
         <h1>{ state.fullName }</h1>
         <p innerHTML={state.short_bio}></p>
+        <div className="stars">
+          <select id="contact-rating" name="rating" autocomplete="off">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <span className="title">Rating - with jQuery plugin</span>
+        </div>
       </div>
       <ul className="links">
         {state.github && <li>
