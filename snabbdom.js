@@ -10,7 +10,8 @@ var patch = snabbdom.init([ // Init patch function with chosen modules
 ])
 
 module.exports = function (template, data) {
-  var newTree = template(data)
+  var state = this.thisAsState ? this : data
+  var newTree = template(state)
   if (!this.elTree) {
     // small cheat to allow rendering root el
     // creates an empty vnode with the same sel as the rendered vtree

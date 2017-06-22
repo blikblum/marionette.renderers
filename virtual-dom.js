@@ -12,7 +12,8 @@ function createVirtualTree(view, children) {
 }
 
 module.exports = function (template, data) {
-  var children = template(data)
+  var state = this.thisAsState ? this : data
+  var children = template(state)
   let newVirtualTree = createVirtualTree(this, children)
   if (!this.elVirtualTree) {
     //first render

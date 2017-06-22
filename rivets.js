@@ -4,7 +4,7 @@ function destroyRivetsView() {
   if (this.rivetsView) this.rivetsView.unbind()
 }
 
-module.exports = function(template, data) {
+module.exports = function(template) {
   if (!this.rivetsView) {
     this.on('destroy', destroyRivetsView, this)
   } else {
