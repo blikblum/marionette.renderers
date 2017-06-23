@@ -2,37 +2,46 @@ var h = require('virtual-dom/h')
 var diff = require('virtual-dom/diff')
 var patch = require('virtual-dom/patch')
 var createElement = require('virtual-dom/create-element')
-var _ = require('underscore')
+var applyProperties = require('virtual-dom/vdom/apply-properties')
 
-function createVirtualTree(view, children) {
-  var attrs = _.extend({}, _.result(view, 'attributes'))
-  var className = _.result(view, 'className')
-  if (className) attrs.className = className
-  return h(view.tagName, attrs, children)
+function initElement(node, children) {
+  //virtual-dom does not provide an api to render the children of an element
+  //applying patch in first render works but is not optimal
+  while (node.firstChild) {
+    node.removeChild(node.firstChild);
+  }
+  if (Array.isArray(children)) {
+    for (var i = 0; i < children.length; i++) {
+      var childNode = createElement(children[i])
+      if (childNode) {
+        node.appendChild(childNode)
+      }
+    }
+  } else {
+    node.appendChild(createElement(children))
+  }
 }
 
 module.exports = function (template, data) {
   var state = this.thisAsState ? this : data
-  var children = template(state)
-  let newVirtualTree = createVirtualTree(this, children)
-  if (!this.elVirtualTree) {
+  var renderedTree = template(state), newTree
+  if (this.outerRender) {
+    newTree = Array.isArray(renderedTree) ? renderedTree[0] : renderedTree
+  } else {
+    newTree = h(this.tagName, {}, renderedTree)
+  }
+  if (!this.elTree) {
     //first render
-    //virtual-dom does not provide an api to render the children of an element
-    //applying patch in first render works but is not optimal
     var node = this.el
-    if (Array.isArray(children)) {
-      for (var i = 0; i < children.length; i++) {
-        var childNode = createElement(children[i])
-        if (childNode) {
-          node.appendChild(childNode)
-        }
-      }
+    if (this.outerRender) {
+      applyProperties(node, newTree.properties)
+      initElement(node, newTree.children)
     } else {
-      node.appendChild(createElement(children))
+      initElement(node, renderedTree)
     }
   } else {
-    var treeDiff = diff(this.elVirtualTree, newVirtualTree)
+    var treeDiff = diff(this.elTree, newTree)
     patch(this.el, treeDiff)
   }
-  this.elVirtualTree = newVirtualTree
+  this.elTree = newTree
 }

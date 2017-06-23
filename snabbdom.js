@@ -11,12 +11,18 @@ var patch = snabbdom.init([ // Init patch function with chosen modules
 
 module.exports = function (template, data) {
   var state = this.thisAsState ? this : data
-  var newTree = template(state)
+  var newTree = template(state), rootTag
+  if (this.outerRender) {
+    rootTag = newTree.sel
+  } else {
+    rootTag = this.tagName
+    newTree = vnode(rootTag, {}, Array.isArray(newTree) ? newTree : [newTree], undefined, this.el)
+  }
   if (!this.elTree) {
     // small cheat to allow rendering root el
     // creates an empty vnode with the same sel as the rendered vtree
     // this ensure the view element will be properly patched
-    var emptyTree = vnode(newTree.sel, {}, [], undefined, this.el)
+    var emptyTree = vnode(rootTag, {}, [], undefined, this.el)
     patch(emptyTree, newTree)
   } else {
     patch(this.elTree, newTree)
