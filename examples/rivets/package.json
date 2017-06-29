@@ -16,7 +16,7 @@
     "blueimp-md5": "^2.7.0",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
-    "marionette.renderers": "^0.1.0",
+    "marionette.renderers": "^0.4.0",
     "rivets": "blikblum/rivets#svelte",
     "rivets-backbone-adapter": "blikblum/rivets-backbone-adapter#svelte",
     "underscore": "^1.8.3"

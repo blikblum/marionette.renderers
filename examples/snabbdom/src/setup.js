@@ -8,3 +8,4 @@ import 'jquery-bar-rating'
 import 'jquery-bar-rating/dist/themes/fontawesome-stars.css'
 
 Marionette.View.setRenderer(renderer)
+Marionette.View.prototype.outerRender = true

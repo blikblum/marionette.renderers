@@ -14,9 +14,9 @@
     "backbone.syphon": "*",
     "blueimp-md5": "^2.7.0",
     "bootstrap": "^3.3.7",
-    "inferno": "^3.4.3",
+    "inferno": "^3.6.3",
     "jquery": "^3.2.1",
-    "marionette.renderers": "^0.3.1",
+    "marionette.renderers": "^0.4.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {

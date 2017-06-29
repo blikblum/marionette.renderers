@@ -1685,24 +1685,24 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inferno-shared@3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.4.2.tgz#aea188c464c7fcbd174a0e99068e1b88f31d6b49"
+inferno-shared@3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/inferno-shared/-/inferno-shared-3.6.3.tgz#80ed278a03fbf3681a733d9d17207938e856dea7"
 
 inferno-vnode-flags@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.0.0.tgz#f396390f3dafae3b76eea04d04eed6cf2004473b"
 
-inferno-vnode-flags@3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.4.2.tgz#46bda5fe89a302990b4e8daa971021f686f4b619"
+inferno-vnode-flags@3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-3.6.3.tgz#1a1363d7d00ec769de044290f77bd36dd7ff31ad"
 
-inferno@^3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/inferno/-/inferno-3.4.3.tgz#16c1a03f59edd962b033695d845d578f2d1ed4bf"
+inferno@^3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-3.6.3.tgz#72fc2f0d6b847753e8a5c8b2479581b428654e73"
   dependencies:
-    inferno-shared "3.4.2"
-    inferno-vnode-flags "3.4.2"
+    inferno-shared "3.6.3"
+    inferno-vnode-flags "3.6.3"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -2064,9 +2064,9 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
-marionette.renderers@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/marionette.renderers/-/marionette.renderers-0.3.1.tgz#22e36376af528339477e8acdf4fed39102207907"
+marionette.renderers@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/marionette.renderers/-/marionette.renderers-0.4.0.tgz#e04e0d81e8873e296ed19cc594316db12e0cfd56"
 
 math-expression-evaluator@^1.2.14:
   version "1.2.17"

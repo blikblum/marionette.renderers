@@ -16,7 +16,7 @@
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
     "jquery-bar-rating": "^1.2.2",
-    "marionette.renderers": "^0.3.2",
+    "marionette.renderers": "^0.4.0",
     "snabbdom": "^0.6.9",
     "snabbdom-pragma": "^2.3.0",
     "underscore": "^1.8.3"
