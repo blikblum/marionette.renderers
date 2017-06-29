@@ -1,6 +1,7 @@
 {
   "name": "marionette.renderers",
-  "version": "0.3.2",
+  "private": false,
+  "version": "0.4.0",
   "description": "Custom renderers for MarionetteJS",
   "main": "index.js",
   "directories": {
@@ -18,7 +19,11 @@
     "rivets",
     "superviews",
     "snabbdom",
-    "virtual-dom"
+    "virtual-dom",
+    "inferno",
+    "incremental-dom",
+    "incremental-bars",
+    "handlebars"
   ],
   "author": "Luiz Américo Pereira Câmara",
   "license": "MIT",
