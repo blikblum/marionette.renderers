@@ -1,4 +1,4 @@
-## marionette.renderers
+# marionette.renderers
 
 > Collection of custom renderers for Marionette.js
 
@@ -8,10 +8,10 @@ Import the desired renderer
  
 ```javascript
 // with ES modules
-import renderer from 'marionette.renderers/[rederer-name]'
+import renderer from 'marionette.renderers/[renderer-name]'
 
 // or with CommonJS modules
-var renderer = require('marionette.renderers/[rederer-name]')
+var renderer = require('marionette.renderers/[renderer-name]')
   ```
   
   
