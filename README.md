@@ -84,4 +84,8 @@ Uses [inferno](https://github.com/infernojs/inferno/) to render the HTML
 
 ### Examples
 
-See actual examples in the examples folder of this repository  
+See examples folder of this repository for working applications.
+
+[idom live example](https://blikblum.github.io/marionette.renderers/examples/idom/dist/)
+
+[snabbdom live example](https://blikblum.github.io/marionette.renderers/examples/snabbdom/dist/)
