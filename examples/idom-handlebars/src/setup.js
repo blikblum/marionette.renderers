@@ -19,7 +19,7 @@ idom.attributes.innerhtml = function (el, prop, value) {
   idom.skip();
 }
 
-Handlebars.registerHelper('setInnerHTML', function (value) {
+Handlebars.registerHelper('setInnerHTML', function (content, options) {
   const tagName = options.hash.tagName || 'div';
   const el = idom.elementOpen(tagName);
 
