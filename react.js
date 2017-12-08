@@ -1,4 +1,4 @@
-var render = require('rect-dom').render
+var render = require('react-dom').render
 
 module.exports = function (template, data) {
   var state = this.thisAsState ? this : data
