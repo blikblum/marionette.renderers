@@ -25,4 +25,6 @@ let MainView = Marionette.View.extend({
 let contact = new ContactModel()
 contact.set(sampleData.michael)
 
-new MainView({model: contact})
+// help marionette inspector find rootView
+const app = new Marionette.Application()
+app.layout = new MainView({model: contact})
