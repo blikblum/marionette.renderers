@@ -24,7 +24,7 @@ function initElement(node, children) {
 
 module.exports = function (template, data) {
   var state = this.thisAsState ? this : data
-  var renderedTree = template(state), newTree
+  var renderedTree = template.call(this, state), newTree
   if (this.outerRender) {
     newTree = Array.isArray(renderedTree) ? renderedTree[0] : renderedTree
   } else {

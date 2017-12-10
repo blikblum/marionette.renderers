@@ -11,7 +11,7 @@ var patch = snabbdom.init([ // Init patch function with chosen modules
 
 module.exports = function (template, data) {
   var state = this.thisAsState ? this : data
-  var newTree = template(state), rootTag
+  var newTree = template.call(this, state), rootTag
   if (this.outerRender) {
     rootTag = newTree.sel
   } else {
