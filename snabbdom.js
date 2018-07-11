@@ -18,6 +18,11 @@ module.exports = function createRenderer (modules) {
       // this ensure the view element will be properly patched
       var emptyTree = vnode(rootTag, {}, [], undefined, this.el)
       patch(emptyTree, newTree)
+
+      // empty vtree on destroy to ensure hooks gets called
+      this.on('destroy', () => {
+        patch(this.elTree, vnode(rootTag, {}, [], undefined, this.el))
+      })
     } else {
       patch(this.elTree, newTree)
     }
