@@ -10,6 +10,6 @@ module.exports = function(template) {
   } else {
     this.rivetsView.unbind()
   }
-  this.setInnerContent(this.el, template)
+  this.attachElContent(template)
   this.rivetsView = rivets.bind(this.el, this)
 }
